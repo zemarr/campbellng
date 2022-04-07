@@ -22,7 +22,7 @@ export default {
     const autoPlay = () => {
       setInterval(() => {
         changeSlide()
-      }, 6000)
+      }, 20000)
     }
 
     onMounted(() => {
