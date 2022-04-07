@@ -7,10 +7,10 @@ module.exports = {
       fontFamily: {
         Sacker: ['Sacker', 'sans-serif']
       }
-    },
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }

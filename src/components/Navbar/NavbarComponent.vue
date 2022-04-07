@@ -69,71 +69,71 @@
 </template>
 
 <script>
-import { ref } from "vue"
+import { ref } from 'vue'
 
-  export default {
-    name: 'NavbarComponent',
-    components: {
-    },
-    setup () {
-      const isNavActive = ref(false)
-      const toHistory = ref(false)
-      const toPeople = ref(false)
-      const toProjects = ref(false)
-      const toContact = ref(false)
+export default {
+  name: 'NavbarComponent',
+  components: {
+  },
+  setup () {
+    const isNavActive = ref(false)
+    const toHistory = ref(false)
+    const toPeople = ref(false)
+    const toProjects = ref(false)
+    const toContact = ref(false)
 
-      const toggleNav = async () => {
-        isNavActive.value = !isNavActive.value
-        if (isNavActive.value === false) {
-          goBack()
-        }
-      }
-
-      const goBack = async () => {
-        const navItems = document.querySelector('.nav-items')
-        navItems.style.transform = 'translateX(0)'
-        toHistory.value = false
-        toPeople.value = false
-        toProjects.value = false
-        toContact.value = false
-      }
-
-      const viewHistory = async () => {
-        const navItems = document.querySelector('.nav-items')
-        toHistory.value = true
-        navItems.style.transform = 'translateX(-50%)'
-      }
-      const viewPeople = async () => {
-        const navItems = document.querySelector('.nav-items')
-        toPeople.value = true
-        navItems.style.transform = 'translateX(-50%)'
-      }
-      const viewProjects = async () => {
-        const navItems = document.querySelector('.nav-items')
-        toProjects.value = true
-        navItems.style.transform = 'translateX(-50%)'
-      }
-      const viewContact = async () => {
-        const navItems = document.querySelector('.nav-items')
-        toContact.value = true
-        navItems.style.transform = 'translateX(-50%)'
-      }
-
-      return {
-        isNavActive,
-        toggleNav,
-        goBack,
-        toHistory,
-        toPeople,
-        toProjects,
-        toContact,
-        viewHistory,
-        viewPeople,
-        viewProjects,
-        viewContact
+    const toggleNav = async () => {
+      isNavActive.value = !isNavActive.value
+      if (isNavActive.value === false) {
+        goBack()
       }
     }
+
+    const goBack = async () => {
+      const navItems = document.querySelector('.nav-items')
+      navItems.style.transform = 'translateX(0)'
+      toHistory.value = false
+      toPeople.value = false
+      toProjects.value = false
+      toContact.value = false
+    }
+
+    const viewHistory = async () => {
+      const navItems = document.querySelector('.nav-items')
+      toHistory.value = true
+      navItems.style.transform = 'translateX(-50%)'
+    }
+    const viewPeople = async () => {
+      const navItems = document.querySelector('.nav-items')
+      toPeople.value = true
+      navItems.style.transform = 'translateX(-50%)'
+    }
+    const viewProjects = async () => {
+      const navItems = document.querySelector('.nav-items')
+      toProjects.value = true
+      navItems.style.transform = 'translateX(-50%)'
+    }
+    const viewContact = async () => {
+      const navItems = document.querySelector('.nav-items')
+      toContact.value = true
+      navItems.style.transform = 'translateX(-50%)'
+    }
+
+    return {
+      isNavActive,
+      toggleNav,
+      goBack,
+      toHistory,
+      toPeople,
+      toProjects,
+      toContact,
+      viewHistory,
+      viewPeople,
+      viewProjects,
+      viewContact
+    }
   }
+}
 </script>
 
 <style scoped>

@@ -27,7 +27,7 @@
     </div>
     <!-- toggle menu class -->
      <!-- :class="[windowWidth < 1024 ? '-right-[200px]' : 'right-0', menuOpen ? 'right-0' : '-right-[200px]']" -->
-    
+
     <router-view></router-view>
   </div>
 </template>
@@ -46,19 +46,19 @@ export default {
     CarouselSlide
   },
   setup () {
-    let windowWidth = ref(window.innerWidth)
-    let menuOpen = ref(false)
-    
+    const windowWidth = ref(window.innerWidth)
+    const menuOpen = ref(false)
+
     const carouselSlides = [
-      "Backg-1",
-      "Backg-2",
-      "Backg-3",
-      "Backg-4",
-      "Backg-5",
-      "Backg-6"
+      'Backg-1',
+      'Backg-2',
+      'Backg-3',
+      'Backg-4',
+      'Backg-5',
+      'Backg-6'
     ]
 
-    const onWidthChange =  () => {
+    const onWidthChange = () => {
       windowWidth.value = window.innerWidth
     }
 

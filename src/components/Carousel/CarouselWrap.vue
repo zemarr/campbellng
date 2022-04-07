@@ -5,37 +5,37 @@
 </template>
 
 <script>
-    import { ref, onMounted } from "vue"
+import { ref, onMounted } from 'vue'
 
-    export default {
-        name: 'CarouselWrap',
-        setup() {
-            const currentSlide = ref(1)
-            const getSlideCount = ref(null)
-            const changeSlide = () => {
-                if (currentSlide.value === getSlideCount.value) {
-                    currentSlide.value = 1
-                    return
-                }
-                currentSlide.value += 1
-            }
-            const autoPlay = () => {
-                setInterval(() => {
-                    changeSlide()
-                }, 6000);
-            }
-
-            onMounted(() => {
-                getSlideCount.value = document.querySelectorAll('.carousel-slide').length
-                autoPlay()
-            })
-
-            return {
-                currentSlide,
-                getSlideCount
-            }
-        }
+export default {
+  name: 'CarouselWrap',
+  setup () {
+    const currentSlide = ref(1)
+    const getSlideCount = ref(null)
+    const changeSlide = () => {
+      if (currentSlide.value === getSlideCount.value) {
+        currentSlide.value = 1
+        return
+      }
+      currentSlide.value += 1
     }
+    const autoPlay = () => {
+      setInterval(() => {
+        changeSlide()
+      }, 6000)
+    }
+
+    onMounted(() => {
+      getSlideCount.value = document.querySelectorAll('.carousel-slide').length
+      autoPlay()
+    })
+
+    return {
+      currentSlide,
+      getSlideCount
+    }
+  }
+}
 </script>
 <style>
 </style>

@@ -1,4 +1,4 @@
-# kinfolk-main-landing-v2
+# campbell-ng-v2
 
 ## Project setup
 ```

@@ -5,27 +5,27 @@
 </template>
 
 <script>
-import { onMounted, onUnmounted, ref } from "vue"
+import { onMounted, onUnmounted, ref } from 'vue'
 
 export default {
-  name: "HomeView",
+  name: 'HomeView',
   components: {},
-  setup() {
-    let windowWidth = ref(window.innerWidth)
+  setup () {
+    const windowWidth = ref(window.innerWidth)
     const onWidthChange = () => {
       windowWidth.value = window.innerWidth
     }
 
     onMounted(() => {
-      window.addEventListener("resize", onWidthChange)
+      window.addEventListener('resize', onWidthChange)
     })
     onUnmounted(() => {
-      window.removeEventListener("resize", onWidthChange)
+      window.removeEventListener('resize', onWidthChange)
     })
 
     return {
       windowWidth
     }
-  },
+  }
 }
 </script>

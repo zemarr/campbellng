@@ -7,11 +7,11 @@
 </template>
 
 <script>
-    export default {
-        name: 'CarouselSlide'
-    }
+export default {
+  name: 'CarouselSlide'
+}
 </script>
-<style scoped>
+<style>
     .fade-enter-active, .fade-leave-active {
         transition: opacity 3s ease-in-out;
     }
