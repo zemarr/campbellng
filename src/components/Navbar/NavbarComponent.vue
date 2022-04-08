@@ -26,7 +26,7 @@
             <ul v-show="toPeople" class="people slide-screen relative flex flex-col justify-center items-center text-white w-[100%]">
               <li class="mx-auto font-medium text-[16px] mb-4">PEOPLE</li>
               <li class="mx-auto text-[15px]">
-                <a href="http://toni.campbell.ng">Oluwatoni</a>
+                <a href="http://toni.campbell.ng" target="_blank">Oluwatoni</a>
               </li>
               <li class="mx-auto text-[15px]">Oluwatona</li>
               <!-- <li class="mx-auto text-[15px]">Alolade</li>
