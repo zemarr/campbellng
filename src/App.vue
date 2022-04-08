@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full relative flex items-center overflow-hidden">
+  <div class="w-full relative flex items-center overflow-hidden bg-black">
     <div class="left">
       <Carousel v-slot="{ currentSlide }">
         <CarouselSlide v-for="(slide, index) in carouselSlides" :key="index">
