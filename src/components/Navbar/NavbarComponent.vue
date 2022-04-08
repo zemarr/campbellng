@@ -52,7 +52,7 @@
             <ul v-show="toContact" class="history slide-screen relative flex flex-col justify-center items-center text-white w-[100%]">
               <li class="mx-auto font-medium text-[16px] mb-4">CONTACTS</li>
               <li class="mx-auto text-[15px]">
-                <a href="mailto:info@campbell.ng" class="mail-icon">
+                <a href="mailto:info@campbell.ng" target="_blank" class="mail-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
