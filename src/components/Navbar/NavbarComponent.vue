@@ -50,7 +50,7 @@
               </button>
             </ul>
             <ul v-show="toContact" class="history slide-screen relative flex flex-col justify-center items-center text-white w-[100%]">
-              <li class="mx-auto font-medium text-[16px] mb-4">CONTACTS</li>
+              <li class="mx-auto font-medium text-[16px] mb-4">CONTACT</li>
               <li class="mx-auto text-[15px]">
                 <a href="mailto:info@campbell.ng" target="_blank" class="mail-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
