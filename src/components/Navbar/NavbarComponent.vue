@@ -1,11 +1,11 @@
 <template>
     <nav class="nav">
       <div class="relative flex flex-col items-center">
-        <div class="logo w-[100px] h-[100px] cursor-pointer z-40" @click="toggleNav()">
+        <div class="logo w-[90px] h-[90px] cursor-pointer z-40" @click="toggleNav()">
           <img src="../../assets/logo.png" alt="" class="w-full h-full">
         </div>
         <span class="nav-line block h-[2px] bg-white my-2" :class="[isNavActive ? 'w-full' : 'w-0']"></span>
-        <div class="nav-wrap w-full overflow-hidden min-h-max absolute left-0 z-30" :class="[isNavActive ? 'top-[130px] opacity-[1] z-40 delayed' : 'top-0 opacity-0 z-30 delayed']">
+        <div class="nav-wrap w-full overflow-hidden min-h-max absolute left-0 z-30" :class="[isNavActive ? 'top-[110px] opacity-[1] z-40 delayed' : 'top-0 opacity-0 z-30 delayed']">
           <div class="nav-items  fast-transition relative grid grid-cols-2 flex-nowrap w-[200%] overflow-hidden">
             <ul class="w-[100%] text-center text-white overflow-hidden relative">
               <li class="w-full cursor-pointer" @click="viewHistory">HISTORY</li>
